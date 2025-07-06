@@ -1,0 +1,52 @@
+
+
+
+
+footer a {
+  font-size:10px; /* Adjust as needed */
+  color:red; 
+  position:bottom;
+  text-align: center;
+  
+}
+
+
+
+video {
+    position:fixed;
+    top:0;
+    left:0;
+    min-width:50%;
+    min-height:50%;
+    z-index: -1; /* Ensure the video stays in the background */
+}
+
+
+
+div{
+  border-image-width:20;
+}
+
+
+section {
+	font-family:cursive;
+}
+
+
+
+ footer {
+            background-color:pink;
+            color:lightgoldenrodyellow;
+            text-align:center;
+            padding: 1em;
+            position: fixed;
+            bottom:50;
+            width: 100%;
+        }  
+        footer-image {
+            max-width: 600%;
+            height: auto;
+            margin-top: 50px;
+        }   
+
+

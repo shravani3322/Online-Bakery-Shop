@@ -1,0 +1,22 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<emp>
+    <empdata name="b">
+    <ename>ram</ename>
+    <color>pink</color>
+    <eadd>bmt</eadd>
+    <eno>1234567</eno>
+</empdata>
+
+<empdata name="c">
+    <ename>rani</ename>
+    <color>red</color>
+    <eadd>pune</eadd>
+    <eno>57687989</eno>
+</empdata>
+<empdata name="d">
+    <ename>sam</ename>
+    <color>blue</color>
+    <eadd>nagpur</eadd>
+    <eno>146576878</eno>
+</empdata>
+</emp>

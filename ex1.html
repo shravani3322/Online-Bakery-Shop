@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .slider-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position:cover;
+            max-height: 1000px;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="http://localhost/shraa/img/pc0.jpg" alt="Image 1">Baking in oven</div>
+            <div class="slide"><img src="http://localhost/shraa/img/pc4.png" alt="Image 2">process with our good staff</div>
+            <div class="slide"><img src="http://localhost/shraa/img/pc1.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="http://localhost/shraa/img/pc3.png" alt="Image 4"></div>
+            <div class="slide"><img src="http://localhost/shraa/img/pc5.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="http://localhost/shraa/img/pc6.jpg" alt="Image 3" ><p style="font-size:55"> Then products redy for Sell</p></div>
+        
+        </div>
+        <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="next" onclick="changeSlide(1)">&#10095;</div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+
+        function changeSlide(n) {
+            showSlide(currentSlide += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelector('.slider');
+            const totalSlides = slides.children.length;
+
+            if (n >= totalSlides) {
+                currentSlide = 0;
+            } else if (n < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = n;
+            }
+
+            const transformValue = -currentSlide * 100 + '%';
+            slides.style.transform = 'translateX(' + transformValue + ')';
+        }
+    </script>
+
+
+    
+
+</body>
+</html>

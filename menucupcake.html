@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #B03A2E;
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .item-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: #B03A2E;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .add-to-cart-button {
+            background-color: #B03A2E;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body background-image: url(http://localhost/shraa/img/g2.gif);> 
+
+    <h1>select your favourite
+    </h1>
+
+
+<div class="menu-item">
+        <img src="http://localhost/shraa/img/cupk1.webp" alt="Baguette" class="item-image">
+        <p><strong>Chocolava</strong></p>
+        <p class="price">Price:Rs35</p>
+        <button class="add-to-cart-button" onclick="addToCart('Chocolava', 35.00)">Add to Cart</button>
+    </div>
+
+     <div class="menu-item">
+        <img src="http://localhost/shraa/img/cupk3.webp" alt="Baguette" class="item-image">
+        <p><strong>Cheescake cup</strong></p>
+        <p class="price">Price:Rs.60</p>
+        <button class="add-to-cart-button" onclick="addToCart('Cheescake cup', 60.00)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="http://localhost/shraa/img/cupk2.webp" alt="Croissant" class="item-image">
+        <p><strong>Rassabery</strong></p>
+        <p class="price">Price:Rs.50</p>
+        <button class="add-to-cart-button" onclick="addToCart('Rassabery', 50.00)">Add to Cart</button>
+    </div>
+
+    
+   
+
+    <!-- Add more items as needed -->
+
+    <script>
+        function addToCart(itemName, itemPrice) {
+            // Add your logic to handle adding items to the shopping cart
+            alert(`Added ${itemName} to the cart. Price: Rs${itemPrice}`);
+        }
+    </script>
+
+<br>
+<br>
+<br>
+<br>    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        button {
+            background-color:red;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+
+     <button onclick="redirectToPage()">Go Back</button>
+
+    <script>
+        function redirectToPage() {
+            window.location.href = "http://localhost/shraa/finalwebpage.php"; // Replace with your desired link
+        }
+    </script>
+
+ 
+</body>
+</html>

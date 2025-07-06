@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration</title>
+</head>
+<body>
+
+<form id="resetfrm.php">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+  <button type="submit">Submit</button>
+   
+</form>
+
+<button onclick="resetPassword()">Reset Password</button>
+<button onclick="resetEmail()">Reset Email</button>
+
+<script>
+function resetPassword() {
+  document.getElementById("password").value = "";
+}
+
+function resetEmail() {
+  document.getElementById("email").value = "";
+}
+</script>
+
+</body>
+</html>

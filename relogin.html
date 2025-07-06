@@ -1,0 +1,87 @@
+
+<html>
+<style>
+  body {
+      background-image: url("http://localhost/shraa/img/bcs.png");
+      background-size: cover;
+      font-family:all, sans-serif;
+      background-color: #f4f4f4;
+      color: white;
+    }
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display:inline-block;
+  margin-top: 10px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.rating {
+  direction:right;
+}
+  .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+<form>
+  <form action="relogin.php" method="POST">
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  
+  <label for="feedbackCategory">Feedback Category:</label>
+  <select id="feedbackCategory" name="feedbackCategory" required>
+    <option value="">Select a category</option>
+    <option value="General">Test</option>
+    <option value="Product">Product</option>
+    <option value="Service">Service</option>
+  </select>
+
+  <label for="feedback">Feedback:</label>
+  <textarea id="feedback" name="feedback" required></textarea>
+
+  <label for="rating">Rating:</label>
+  <div class="rating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">⭐</label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4">⭐⭐</label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3">⭐⭐⭐</label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2">⭐⭐⭐⭐</label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1">⭐⭐⭐⭐⭐</label>
+  </div>
+
+  <input type="submit" value="Submit">
+</form>
+</html>
+
+
+
