@@ -8,7 +8,7 @@ It allows users to browse bakery products and place orders online.
 - HTML  
 - CSS  
 - PHP  
-- Bootstrap
+
 
 ## ✨ Features
 - Product listing with images  
