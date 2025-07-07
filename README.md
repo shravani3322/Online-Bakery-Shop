@@ -25,3 +25,5 @@ For educational use only.
 © 2025 Shravani Navale
 #PROJECT SCREENSHOTS
 ![homepage png](https://github.com/user-attachments/assets/0631bbf0-a96c-4d7e-ab08-02c8165f69e1)
+![Screenshot 2025-07-07 120938](https://github.com/user-attachments/assets/02d77aed-fbf7-41da-932b-6280690a1d82)
+
